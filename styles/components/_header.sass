@@ -1,0 +1,22 @@
+$logo-width: image-width('logo.png')
+.header
+  display: flex
+  justify-content: space-between
+  &__logo
+    display: inline-block
+    background: image-url('logo.png')
+    height: image-height('logo.png')
+    width: $logo-width
+    flex: 1 1 $logo-width
+  &_nav
+    width: calc(100% - #{$logo-width})
+    flex: 1 1 calc(100% - #{$logo-width})
+    display: flex
+    justify-content: flex-end
+    &__item
+      margin: 0 3%
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+

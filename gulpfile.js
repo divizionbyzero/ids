@@ -14,18 +14,12 @@ gulp.task('sass', function () {
 
 gulp.task('jade', function () {
     var YOUR_LOCALS = {};
-    gulp.src('app/layout/templates/info.jade')
+    gulp.src('layout/components/index.jade')
         .pipe(jade({
             locals: YOUR_LOCALS,
             pretty: true
         }))
-        .pipe(gulp.dest('app/layout/html'));
-    gulp.src('app/layout/templates/info.jade')
-        .pipe(jade({
-            locals: YOUR_LOCALS,
-            pretty: true
-        }))
-        .pipe(gulp.dest('app'));
+        .pipe(gulp.dest(''));
 });
 
 gulp.task('watch', function () {
