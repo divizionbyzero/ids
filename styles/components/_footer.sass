@@ -1,0 +1,25 @@
+.footer
+  background: $blue
+  &_wrap
+    +leader(1)
+    +trailer(1)
+  &_nav
+    +flex(1 1 auto)
+    +display-flex(flex)
+    +justify-content(flex-start)
+    +align-items(center)
+    &__item
+      margin: 0 3%
+      color: $white
+      font-family: 'Oswald', sans-serif
+      text-transform: uppercase
+      font-weight: bold
+      height: 100%
+      letter-spacing: 1px
+      +adjust-font-size-to(19px)
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+  &_copy
+    color: $white

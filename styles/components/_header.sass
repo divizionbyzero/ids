@@ -1,20 +1,29 @@
 $logo-width: image-width('logo.png')
 .header
-  display: flex
-  justify-content: space-between
+  +leader(.5)
+  +display-flex(flex)
+  +justify-content(space-between)
   &__logo
     display: inline-block
     background: image-url('logo.png')
     height: image-height('logo.png')
     width: $logo-width
-    flex: 1 1 $logo-width
+    +flex(1 1 $logo-width)
   &_nav
     width: calc(100% - #{$logo-width})
-    flex: 1 1 calc(100% - #{$logo-width})
-    display: flex
-    justify-content: flex-end
+    +flex(1 1 calc(100% - #{$logo-width}))
+    +display-flex(flex)
+    +justify-content(flex-end)
+    +align-items(center)
     &__item
       margin: 0 3%
+      color: $blue
+      font-family: 'Oswald', sans-serif
+      text-transform: uppercase
+      font-weight: bold
+      height: 100%
+      letter-spacing: 1px
+      +adjust-font-size-to(22px)
       &:first-child
         margin-left: 0
       &:last-child

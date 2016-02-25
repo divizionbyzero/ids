@@ -1,12 +1,46 @@
 .content
   &_potfolio
-    display: flex
-    justify-content: space-between
+    +display-flex(flex)
+    +justify-content(space-between)
+    +padding-leader(.5)
     overflow: hidden
     &_item
-      display: flex
-      flex-flow: column nowrap
+      +display-flex(flex)
+      +flex-flow(column nowrap)
       width: 20%
       overflow: hidden
       &_picture
         display: inline-block
+        font-size: 0
+        &__img
+          border: 5px solid $blue
+  &_title
+    font-family: 'Oswald', sans-serif
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 1px
+    color: $blue
+    +adjust-font-size-to(22px)
+    +leader(1)
+    +trailer(.5)
+  &_text
+    text-align: justify
+
+.about,
+.portfolio,
+.why,
+.contacts
+  +trailer(2)
+
+.contacts
+  &_list
+    &_item
+      display: block
+      +trailer(.4)
+      color: $blue
+      i
+        width: 30px
+        color: $black
+        +opacity(.8)
+        margin-right: 10px
+        +adjust-font-size-to(22px)
