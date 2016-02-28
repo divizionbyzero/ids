@@ -1,6 +1,7 @@
 .footer
   background: $blue
   &_wrap
+    display: block
     +leader(1)
     +trailer(1)
   &_nav
@@ -23,3 +24,15 @@
         margin-right: 0
   &_copy
     color: $white
+
+@media screen and (max-width: $xs)
+  .footer
+    &_wrap
+      +display-flex(flex)
+      +flex-flow(column nowrap)
+      +trailer(0.3)
+    &_nav
+      +justify-content(space-around)
+      +trailer(.7)
+    &_copy
+      text-align: center

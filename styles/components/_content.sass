@@ -1,28 +1,39 @@
 .content
   &_potfolio
     +display-flex(flex)
+    +flex-flow(row nowrap)
     +justify-content(space-between)
     +padding-leader(.5)
     overflow: hidden
     &_item
-      +display-flex(flex)
+      +display-flex(inline-flex)
       +flex-flow(column nowrap)
-      width: 20%
+      width: 30%
       overflow: hidden
-      &_picture
-        display: inline-block
-        font-size: 0
-        &__img
-          border: 5px solid $blue
+      &_wrap
+        position: relative
+        width: 100%
+        overflow: hidden
+        &:before
+          content: ""
+        display: block
+        padding-top: 100%
+      &__img
+        border: 5px solid $blue
+        position:  absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+      &__title
+        @extend .subtitle
   &_title
-    font-family: 'Oswald', sans-serif
-    text-transform: uppercase
-    font-weight: bold
+    @extend .title
+    text-align: right
     letter-spacing: 1px
     color: $blue
-    +adjust-font-size-to(22px)
-    +leader(1)
-    +trailer(.5)
+    +leader(.5)
+    +trailer(.2)
   &_text
     text-align: justify
 
@@ -38,9 +49,31 @@
       display: block
       +trailer(.4)
       color: $blue
+      margin-left: 1em
       i
         width: 30px
         color: $black
         +opacity(.8)
         margin-right: 10px
         +adjust-font-size-to(22px)
+
+.table
+  &_head
+    background: #dddddd
+    padding-left: 1em
+    &__text
+      display: inline-block
+      text-transform: uppercase
+      +leader(.1)
+      +trailer(.1)
+  &_content
+    &>td
+      padding-left: 2em
+
+@media screen and (max-width: $xs)
+  .content
+    &_potfolio
+      +flex-flow(column nowrap)
+      &_item
+        width: 100%
+        +trailer(1)

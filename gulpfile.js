@@ -22,6 +22,16 @@ gulp.task('jade', function () {
         .pipe(gulp.dest(''));
 });
 
+gulp.task('jade-guide', function () {
+    var YOUR_LOCALS = {};
+    gulp.src('layout/components/style_guide.jade')
+        .pipe(jade({
+            locals: YOUR_LOCALS,
+            pretty: true
+        }))
+        .pipe(gulp.dest(''));
+});
+
 gulp.task('watch', function () {
     gulp.watch('app/styles/scss/**/*.scss', ['sass']);
     gulp.watch('app/layout/**/*.jade', ['jade']);

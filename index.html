@@ -29,48 +29,98 @@
   </head>
   <body>
     <title>Hele</title>
-    <header class="container header"><a role="banner" class="header__logo"></a>
-      <nav role="navigation" class="header_nav"><a role="link" class="header_nav__item">About</a><a role="link" class="header_nav__item">Portfolio</a><a role="link" class="header_nav__item">Why</a><a role="link" class="header_nav__item">Call me</a></nav>
+    <header class="container header"><a role="banner" class="header__logo col-xs-12 col-sm-4"></a>
+      <nav role="navigation" class="header_nav col-xs-12 col-sm-8 pr0"><a role="link" class="header_nav__item">About</a><a role="link" class="header_nav__item">Portfolio</a><a role="link" class="header_nav__item">Contacts</a></nav>
     </header>
     <main role="main" class="container content">
-      <article role="article" class="about">
-        <h2 class="content_title">About</h2>
-        <p class="content_text">Lorem ipsum dolor sit amet, phasellus vel luctus est vestibulum ut, urna purus amet, taciti metus turpis ante. Auctor fermentum, natoque eros quis a sapien sed enim, sed sodales iaculis, arcu non class, pretium et interdum nonummy. Eget nam id amet suspendisse ipsum, aliquam sapien in dolor eros ultricies vehicula, arcu sem auctor porttitor nibh arcu. Justo ac tristique nunc ut cursus, ante eros inceptos ut donec, feugiat ante malesuada. Enim etiam, neque lacus amet proin pharetra urna magna, scelerisque deleniti massa urna nulla ligula, gravida natoque amet maecenas, luctus et congue. Vel nullam mauris nunc in fringilla curabitur, nonummy maecenas quam massa ut, maecenas blandit urna vestibulum consequat sit purus. Ad libero a tempus euismod et. Morbi sed ultrices eleifend tellus morbi faucibus, dui dis ligula eros diam vestibulum at, elit est nulla libero erat ridiculus pede, lectus fringilla lorem ut taciti. Maecenas ultrices vitae, vestibulum porta. Vestibulum tellus aliquam phasellus mattis. Ut lorem quod elit pede vel curabitur. Habitant et et.</p>
+      <article role="article" aria-label="Major info about author" class="about">
+        <h1 class="content_title">About</h1>
+        <table width="100%">
+          <tr>
+            <td colspan="2" class="table_head"><span class="table_head__text">personal information</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>name</span></td>
+            <td><span>Alena Kernazhytskaya</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>age</span></td>
+            <td><span>24</span></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table_head"><span class="table_head__text">education</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>university</span></td>
+            <td><span>Belarusian State Technological University</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>specialization</span></td>
+            <td><span>Software Engineer</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>degree</span></td>
+            <td><span>Bachelor's degree</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>time period</span></td>
+            <td><span>2008 - present</span></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table_head"><span class="table_head__text">work experience</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>company name</span></td>
+            <td><span>SoftTeco</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>position</span></td>
+            <td><span>Front-end dev</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>time period</span></td>
+            <td><span>July 2015 - present</span></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table_head"><span class="table_head__text">skills</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>HTML</span></td>
+            <td><span>HTML5, Jade</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>CSS</span></td>
+            <td><span>CSS3, SCSS, SASS, Compass, Bootstrap</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>JavaScript</span></td>
+            <td><span>jQuery, AngularJS</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><span>English</span></td>
+            <td><span>Intermediate</span></td>
+          </tr>
+        </table>
       </article>
-      <article role="article" class="portfolio">
+      <article role="article" aria-label="Work examples" class="portfolio">
         <h2 class="content_title">Portfolio</h2>
-        <div class="content_potfolio">
-          <div class="content_potfolio_item"><a class="content_potfolio_item_picture"><img src="images/placeholder1.jpg" class="content_potfolio_item_picture__img"></a>
-            <h4 class="content_potfolio_item_title">First</h4>
-            <p class="content_potfolio_item_description">My first site in portfolio</p>
-          </div>
-          <div class="content_potfolio_item"><a class="content_potfolio_item_picture"><img src="images/placeholder2.jpg" class="content_potfolio_item_picture__img"></a>
-            <h4 class="content_potfolio_item_title">First</h4>
-            <p class="content_potfolio_item_description">My first site in portfolio</p>
-          </div>
-          <div class="content_potfolio_item"><a class="content_potfolio_item_picture"><img src="images/placeholder3.jpg" class="content_potfolio_item_picture__img"></a>
-            <h4 class="content_potfolio_item_title">First</h4>
-            <p class="content_potfolio_item_description">My first site in portfolio</p>
-          </div>
-          <div class="content_potfolio_item"><a class="content_potfolio_item_picture"><img src="images/placeholder4.jpg" class="content_potfolio_item_picture__img"></a>
-            <h4 class="content_potfolio_item_title">First</h4>
-            <p class="content_potfolio_item_description">My first site in portfolio</p>
-          </div>
-        </div>
+        <div class="content_potfolio"><a class="content_potfolio_item">
+            <div class="content_potfolio_item_wrap"><img src="images/belarusn.png" class="content_potfolio_item__img"></div>
+            <h2 class="content_potfolio_item__title">BelarusN</h2></a><a class="content_potfolio_item">
+            <div class="content_potfolio_item_wrap"><img src="images/fgolf.png" class="content_potfolio_item__img"></div>
+            <h2 class="content_potfolio_item__title">Golf Federation</h2></a><a class="content_potfolio_item">
+            <div class="content_potfolio_item_wrap"><img src="images/spurry.png" class="content_potfolio_item__img"></div>
+            <h2 class="content_potfolio_item__title">Spurry.io</h2></a></div>
       </article>
-      <article role="article" class="why">
-        <h2 class="content_title">Why?</h2>
-        <p class="content_text">Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because Because</p>
-      </article>
-      <article role="article" class="contacts">
+      <article role="article" aria-label="Author's contacts" class="contacts">
         <h2 class="content_title">Contacts</h2>
         <address class="contacts_list"><a href="mailto:kernazhytskayalena@gmail.com" class="contacts_list_item"><i class="fa fa-envelope"></i> kernazhytskayalena@gmail.com</a><a class="contacts_list_item"><i class="fa fa-phone"></i> +375 (25) 690-47-79</a><a href="https://www.linkedin.com/in/alena-kernazhytskaya-2b7245116" class="contacts_list_item"><i class="fa fa-linkedin"></i> my profile</a><a href="https://github.com/divizionbyzero" class="contacts_list_item"><i class="fa fa-github-alt"></i> my account</a></address>
       </article>
     </main>
     <footer class="footer">
       <div class="container footer_wrap">
-        <nav role="navigation" class="col-sm-7 footer_nav"><a role="link" class="footer_nav__item">About</a><a role="link" class="footer_nav__item">Portfolio</a><a role="link" class="footer_nav__item">Why</a><a role="link" class="footer_nav__item">Call me</a></nav>
-        <div role="contentinfo" class="col-sm-5 footer_copy text-right"><span class="footer_copy__text">&copy; 2015 Hele. All rights reserved.</span></div>
+        <nav role="navigation" class="col-xs-12 col-sm-7 footer_nav"><a role="link" class="footer_nav__item">About</a><a role="link" class="footer_nav__item">Portfolio</a><a role="link" class="footer_nav__item">Contacts</a></nav>
+        <div role="contentinfo" class="col-xs-12 col-sm-5 footer_copy text-right"><span class="footer_copy__text">&copy; 2015 Hele. All rights reserved.</span></div>
       </div>
     </footer>
   </body>
