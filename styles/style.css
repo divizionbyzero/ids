@@ -69,7 +69,7 @@ body {
   -webkit-flex-direction: column;
   flex-direction: column;
   scroll-behavior: smooth;
-  background: #f1f1f1;
+  background: #FEFEFE;
 }
 
 .content {
@@ -109,10 +109,9 @@ button {
   font-size: 2em;
   line-height: 1.5em;
   font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
 }
 
-.subtitle, .content_potfolio_item__title {
+.subtitle {
   font-size: 24px;
   font-size: 1.5em;
   line-height: 2em;
@@ -158,7 +157,7 @@ html {
 }
 .header__logo {
   display: inline-block;
-  background: url('../images/logo.png?1456425880') no-repeat center;
+  background: url('../images/logo.png?1456774236') no-repeat center;
   height: 256px;
   -webkit-flex: 1 1 256px;
   flex: 1 1 256px;
@@ -175,9 +174,10 @@ html {
 }
 .header_nav__item {
   margin: 0 3%;
-  color: #3D93AA;
+  color: #3395BF;
   height: 100%;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 .header_nav__item:first-child {
   margin-left: 0;
@@ -224,7 +224,7 @@ html {
   content: "";
 }
 .content_potfolio_item__img {
-  border: 5px solid #3D93AA;
+  border: 5px solid #3395BF;
   position: absolute;
   top: 0;
   left: 0;
@@ -232,9 +232,8 @@ html {
   right: 0;
 }
 .content_title {
-  text-align: right;
   letter-spacing: 1px;
-  color: #3D93AA;
+  color: #282828;
   margin-top: 0.83333em;
   margin-bottom: 0.33333em;
 }
@@ -246,13 +245,14 @@ html {
 .portfolio,
 .why,
 .contacts {
-  margin-bottom: 3.33333em;
+  margin-top: 3.33333em;
+  margin-bottom: 1.66667em;
 }
 
 .contacts_list_item {
   display: block;
   margin-bottom: 0.66667em;
-  color: #3D93AA;
+  color: #3395BF;
   margin-left: 1em;
 }
 .contacts_list_item i {
@@ -290,7 +290,7 @@ html {
   }
 }
 .footer {
-  background: #3D93AA;
+  background: #3395BF;
 }
 .footer_wrap {
   display: block;

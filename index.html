@@ -30,10 +30,10 @@
   <body>
     <title>Hele</title>
     <header class="container header"><a role="banner" class="header__logo col-xs-12 col-sm-4"></a>
-      <nav role="navigation" class="header_nav col-xs-12 col-sm-8 pr0"><a role="link" class="header_nav__item">About</a><a role="link" class="header_nav__item">Portfolio</a><a role="link" class="header_nav__item">Contacts</a></nav>
+      <nav role="navigation" class="header_nav col-xs-12 col-sm-8 pr0"><a role="link" href="#about" class="header_nav__item">About</a><a role="link" href="#portfolio" class="header_nav__item">Portfolio</a><a role="link" href="#contacts" class="header_nav__item">Contacts</a></nav>
     </header>
     <main role="main" class="container content">
-      <article role="article" aria-label="Major info about author" class="about">
+      <article role="article" aria-label="Major info about author" id="about" class="about">
         <h1 class="content_title">About</h1>
         <table width="100%">
           <tr>
@@ -102,17 +102,14 @@
           </tr>
         </table>
       </article>
-      <article role="article" aria-label="Work examples" class="portfolio">
+      <article role="article" aria-label="Work examples" id="portfolio" class="portfolio">
         <h2 class="content_title">Portfolio</h2>
         <div class="content_potfolio"><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap"><img src="images/belarusn.png" class="content_potfolio_item__img"></div>
-            <h2 class="content_potfolio_item__title">BelarusN</h2></a><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap"><img src="images/fgolf.png" class="content_potfolio_item__img"></div>
-            <h2 class="content_potfolio_item__title">Golf Federation</h2></a><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap"><img src="images/spurry.png" class="content_potfolio_item__img"></div>
-            <h2 class="content_potfolio_item__title">Spurry.io</h2></a></div>
+            <div class="content_potfolio_item_wrap"><img src="images/belarusn.png" class="content_potfolio_item__img"></div></a><a class="content_potfolio_item">
+            <div class="content_potfolio_item_wrap"><img src="images/fgolf.png" class="content_potfolio_item__img"></div></a><a class="content_potfolio_item">
+            <div class="content_potfolio_item_wrap"><img src="images/spurry.png" class="content_potfolio_item__img"></div></a></div>
       </article>
-      <article role="article" aria-label="Author's contacts" class="contacts">
+      <article role="article" aria-label="Author's contacts" id="contacts" class="contacts">
         <h2 class="content_title">Contacts</h2>
         <address class="contacts_list"><a href="mailto:kernazhytskayalena@gmail.com" class="contacts_list_item"><i class="fa fa-envelope"></i> kernazhytskayalena@gmail.com</a><a class="contacts_list_item"><i class="fa fa-phone"></i> +375 (25) 690-47-79</a><a href="https://www.linkedin.com/in/alena-kernazhytskaya-2b7245116" class="contacts_list_item"><i class="fa fa-linkedin"></i> my profile</a><a href="https://github.com/divizionbyzero" class="contacts_list_item"><i class="fa fa-github-alt"></i> my account</a></address>
       </article>

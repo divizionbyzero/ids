@@ -25,13 +25,10 @@
         left: 0
         bottom: 0
         right: 0
-      &__title
-        @extend .subtitle
   &_title
     @extend .title
-    text-align: right
     letter-spacing: 1px
-    color: $blue
+    color: $black
     +leader(.5)
     +trailer(.2)
   &_text
@@ -41,7 +38,8 @@
 .portfolio,
 .why,
 .contacts
-  +trailer(2)
+  +leader(2)
+  +trailer(1)
 
 .contacts
   &_list
