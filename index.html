@@ -29,8 +29,10 @@
   </head>
   <body>
     <title>Hele</title>
-    <header class="container header"><a role="banner" class="header__logo col-xs-12 col-sm-4"></a>
-      <nav role="navigation" class="header_nav col-xs-12 col-sm-8 pr0"><a role="link" href="#about" class="header_nav__item">About</a><a role="link" href="#portfolio" class="header_nav__item">Portfolio</a><a role="link" href="#contacts" class="header_nav__item">Contacts</a></nav>
+    <header class="header">
+      <div class="container header_wrap"><a role="banner" class="header__logo col-xs-12 col-sm-4"></a>
+        <nav role="navigation" class="header_nav col-xs-12 col-sm-8 pr0"><a role="link" href="#about" class="header_nav__item">About</a><a role="link" href="#portfolio" class="header_nav__item">Portfolio</a><a role="link" href="#contacts" class="header_nav__item">Contacts</a></nav>
+      </div>
     </header>
     <main role="main" class="container content">
       <article role="article" aria-label="Major info about author" id="about" class="about">
@@ -116,7 +118,7 @@
     </main>
     <footer class="footer">
       <div class="container footer_wrap">
-        <nav role="navigation" class="col-xs-12 col-sm-7 footer_nav"><a role="link" class="footer_nav__item">About</a><a role="link" class="footer_nav__item">Portfolio</a><a role="link" class="footer_nav__item">Contacts</a></nav>
+        <nav role="navigation" class="col-xs-12 col-sm-7 footer_nav"><a role="link" href="#about" class="footer_nav__item">About</a><a role="link" href="#portfolio" class="footer_nav__item">Portfolio</a><a role="link" href="#contacts" class="footer_nav__item">Contacts</a></nav>
         <div role="contentinfo" class="col-xs-12 col-sm-5 footer_copy text-right"><span class="footer_copy__text">&copy; 2015 Hele. All rights reserved.</span></div>
       </div>
     </footer>

@@ -1,9 +1,19 @@
 $logo-width: image-width('logo.png')
 .header
-  +leader(.5)
-  +display-flex(flex)
-  +flex-flow(row nowrap)
-  +justify-content(space-between)
+  background: linear-gradient(270deg, #0e6ca6, #56cc9c, #b274d3)
+  background-size: 600% 600%
+  position: relative
+  -webkit-animation: gradientColors 30s ease infinite
+  -moz-animation: gradientColors 30s ease infinite
+  animation: gradientColors 30s ease infinite
+  margin: 0
+  width: 100%
+  &_wrap
+    +leader(.5)
+    +display-flex(flex)
+    +flex-flow(row nowrap)
+    +justify-content(space-between)
+    +padding-trailer(2)
   &__logo
     display: inline-block
     background: image-url('logo.png') no-repeat center
@@ -16,15 +26,18 @@ $logo-width: image-width('logo.png')
     +align-items(center)
     &__item
       @extend .nav-item
-      margin: 0 3%
-      color: $blue
+      margin: 0 2%
+      color: $white
       height: 100%
       letter-spacing: 1px
       font-weight: bold
+      text-shadow: 0px 2px 4px rgba(0,0,0,.1)
       &:first-child
         margin-left: 0
       &:last-child
         margin-right: 0
+      &:hover
+        color: rgba(255, 255, 255, 1)
 
 @media screen and (max-width: $xs)
   .header
