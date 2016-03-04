@@ -54,6 +54,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+@-moz-keyframes gradientColors {
+  0%, 100% {
+    background-position: 0;
+  }
+  25% {
+    background-position: 25% 100%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 75% 100%;
+  }
+}
+@-webkit-keyframes gradientColors {
+  0%, 100% {
+    background-position: 0;
+  }
+  25% {
+    background-position: 25% 100%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 75% 100%;
+  }
+}
 @keyframes gradientColors {
   0%, 100% {
     background-position: 0;
@@ -186,7 +214,7 @@ html {
 }
 .header__logo {
   display: inline-block;
-  background: url('../images/logo.png?1457034825') no-repeat center;
+  background: url('../images/logo.png?1457082461') no-repeat center;
   height: 256px;
   -webkit-flex: 1 1 256px;
   flex: 1 1 256px;
