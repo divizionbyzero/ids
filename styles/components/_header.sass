@@ -1,4 +1,4 @@
-$logo-width: image-width('logo.png')
+$logo-width: 256px
 .header
   background: linear-gradient(270deg, #0e6ca6, #56cc9c, #b274d3)
   background-size: 600% 600%
@@ -11,19 +11,25 @@ $logo-width: image-width('logo.png')
   &_wrap
     +leader(.5)
     +display-flex(flex)
-    +flex-flow(row nowrap)
+    +flex-flow(column nowrap)
     +justify-content(space-between)
     +padding-trailer(2)
-  &__logo
+  &_logo
     display: inline-block
-    background: image-url('logo.png') no-repeat center
-    height: image-height('logo.png')
+    height: 300px
     +flex(1 1 $logo-width)
+    +animation(submarine 4s ease-in-out forwards)
+    &_svg
+      width: 256px
+      height: 300px
+      margin: 0 auto
+      display: block
   &_nav
-    +flex(1 1 calc(100% - #{$logo-width}))
+    +flex(1 1 100%)
     +display-flex(flex)
-    +justify-content(flex-end)
+    +justify-content(center)
     +align-items(center)
+    width: 100%
     &__item
       @extend .nav-item
       margin: 0 2%
