@@ -3,50 +3,56 @@ $logo-width: 256px
   background: linear-gradient(270deg, #0e6ca6, #56cc9c, #b274d3)
   background-size: 600% 600%
   position: relative
-  -webkit-animation: gradientColors 30s ease infinite
-  -moz-animation: gradientColors 30s ease infinite
-  animation: gradientColors 30s ease infinite
+  +animation (gradientColors 30s ease infinite)
   margin: 0
   width: 100%
+  overflow: hidden
   &_wrap
-    +leader(.5)
     +display-flex(flex)
     +flex-flow(column nowrap)
     +justify-content(space-between)
-    +padding-trailer(2)
   &_logo
     display: inline-block
     height: 300px
     +flex(1 1 $logo-width)
-    +animation(submarine 4s ease-in-out forwards)
+    +animation(fadeIn .5s ease, submarine 3s infinite)
     &_svg
       width: 256px
       height: 300px
-      margin: 0 auto
+      //margin: 0 auto
       display: block
+      +transform(scaleX(-1))
+      opacity: .8
   &_nav
     +flex(1 1 100%)
     +display-flex(flex)
     +justify-content(center)
     +align-items(center)
+    +trailer(1)
     width: 100%
+    +animation(bounceInRight 1s)
+    z-index: 1
     &__item
       @extend .nav-item
       margin: 0 2%
-      color: $white
+      color: white
       height: 100%
       letter-spacing: 1px
       font-weight: bold
-      text-shadow: 0px 2px 4px rgba(0,0,0,.1)
+      text-shadow: 0 2px 4px rgba(0,0,0,.1)
       &:first-child
         margin-left: 0
       &:last-child
         margin-right: 0
       &:hover
         color: rgba(255, 255, 255, 1)
+        +animation(swing .5s)
 
-@media screen and (max-width: $xs)
-  .header
-    +flex-flow(column nowrap)
-    &_nav
-      +leader(1)
+.header_logo_bubbles
+  opacity: .9
+  +animation(slideBubbles 3s infinite)
+
+.header_logo_bubbles.posa
+  bottom: 0
+  left: -30px
+  +animation(slideBubbles 3.5s infinite)

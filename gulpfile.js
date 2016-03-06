@@ -33,8 +33,8 @@ gulp.task('jade-guide', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('app/styles/scss/**/*.scss', ['sass']);
-    gulp.watch('app/layout/**/*.jade', ['jade']);
+    //gulp.watch('app/styles/scss/**/*.scss', ['sass']);
+    gulp.watch('layout/components/**/*.jade', ['jade']);
     // Other watchers
 });
 

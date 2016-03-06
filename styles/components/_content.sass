@@ -1,4 +1,5 @@
 .content
+  animation: bounceInUp 1s
   &_potfolio
     +display-flex(flex)
     +flex-flow(row nowrap)
@@ -50,12 +51,12 @@
       +trailer(.4)
       color: $blue
       margin-left: 1em
-      i
-        width: 30px
-        color: $black
+      img
+        width: 25px
         +opacity(.8)
         margin-right: 10px
         +adjust-font-size-to(22px)
+        vertical-align: middle
 
 .table
   &_head

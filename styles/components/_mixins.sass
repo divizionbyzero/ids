@@ -1,3 +1,23 @@
++keyframes (slideDown)
+  from
+    transform: translateY(-300px)
+  to
+    transform: translateY(0)
+
++keyframes (slideUp)
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0)
+
++keyframes (fadeIn)
+  from
+    opacity: 0
+    visibility: hidden
+  to
+    opacity: .9
+    visibility: visible
+
 +keyframes (gradientColors)
   0%, 100%
     background-position: 0
@@ -10,8 +30,122 @@
 
 +keyframes (submarine)
   0%
-    transform: translateX(0%)
+    transform: translateX(-10%) translateY(-50px) rotate(-5deg) scale(1.3)
+    transform-origin: 20% 50%
+    animation-timing-function: linear
+    opacity: 0
+    visibility: hidden
+  5%
+    opacity: .9
+    visibility: visible
+  10%
+    transform: translateX(0) translateY(50px) rotate(5deg) scale(1.25)
+    transform-origin: 20% 50%
+    animation-timing-function: linear
+  20%
+    transform: translateX(20%) translateY(-10px) rotate(-5deg) scale(1.2)
+    transform-origin: 20% 50%
+    animation-timing-function: linear
+  30%
+    transform: translateX(30%) translateY(10px) rotate(2deg) scale(1.15)
+    transform-origin: 20% 40%
+    animation-timing-function: linear
   40%
-    transform: translateY(-50px) rotate(-10deg)
+    transform: translateX(40%) rotate(0deg) rotate(-2deg) scale(1.1)
+    transform-origin: 20% 40%
+    animation-timing-function: linear
+  50%
+    transform: translateX(50%) rotate(0deg) rotate(1deg) scale(1.05)
+    transform-origin: 20% 40%
+    opacity: .85
+    animation-timing-function: linear
+  60%
+    transform: translateX(60%) rotate(1deg) rotate(-1deg) scale(1)
+    transform-origin: 20% 40%
+    opacity: .8
+    animation-timing-function: linear
+  70%
+    transform: translateX(70%) rotate(-1deg) rotate(1deg) scale(.9)
+    transform-origin: 40% 40%
+    opacity: .75
+    animation-timing-function: linear
+  80%
+    transform: translateX(80%) translateY(-30px) rotate(-1deg) scale(.8)
+    transform-origin: 60% 40%
+    opacity: .7
+    animation-timing-function: linear
   100%
-    transform: translateX(200%)
+    transform: translateX(120%) rotate(0deg) scale(.5)
+    transform-origin: 20% 40%
+    opacity: .65
+    animation-timing-function: linear
+
++keyframes(slideBubbles)
+  0%
+    transform: translateY(200px) scale(1.5)
+    animation-timing-function: linear
+    opacity: .75
+  30%
+    transform: translateY(0) translateX(20px) scale(1.25)
+    animation-timing-function: linear
+  60%
+    transform: translateY(-200px) translateX(-20px) scale(1.1)
+    animation-timing-function: linear
+  90%
+    transform: translateY(-400px) translateX(10px) scale(.9)
+    animation-timing-function: linear
+  100%
+    transform: translateY(-500px) translateX(-10px) scale(.7)
+    opacity: .55
+    animation-timing-function: linear
+
++keyframes (bounceInUp)
+  from,
+  60%,
+  75%,
+  90%,
+  to
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  from
+    opacity: 0
+    transform: translate3d(0, 3000px, 0)
+  60%
+    opacity: 1
+    transform: translate3d(0, -20px, 0)
+  75%
+    transform: translate3d(0, 10px, 0)
+
+  90%
+    transform: translate3d(0, -5px, 0)
+  to
+    transform: translate3d(0, 0, 0)
+
++keyframes(swing)
+  0%
+    transform: translateY(10px)
+  20%
+    transform: rotate3d(0, 0, 1, 15deg)
+  40%
+    transform: rotate3d(0, 0, 1, -10deg)
+  60%
+    transform: rotate3d(0, 0, 1, 5deg)
+  80%
+    transform: rotate3d(0, 0, 1, -5deg)
+  to
+    transform: rotate3d(0, 0, 1, 0deg)
+
++keyframes (bounceInRight)
+  from, 60%, 75%, 90%, to
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  from
+    opacity: 0
+    transform: translate3d(3000px, 0, 0)
+  60%
+    opacity: 1
+    transform: translate3d(-25px, 0, 0)
+  75%
+    transform: translate3d(10px, 0, 0)
+  90%
+    transform: translate3d(-5px, 0, 0)
+  to
+    transform: none
