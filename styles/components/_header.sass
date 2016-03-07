@@ -15,20 +15,19 @@ $logo-width: 256px
     display: inline-block
     height: 300px
     +flex(1 1 $logo-width)
-    +animation(fadeIn .5s ease, submarine 3s infinite)
+    +animation(submarine 5s, submarineFadeIn .5s 5s ease, submarine2 1.5s 5.5s ease-in-out infinite)
     &_svg
       width: 256px
       height: 300px
-      //margin: 0 auto
       display: block
       +transform(scaleX(-1))
-      opacity: .8
   &_nav
     +flex(1 1 100%)
     +display-flex(flex)
     +justify-content(center)
     +align-items(center)
     +trailer(1)
+    +leader(3)
     width: 100%
     +animation(bounceInRight 1s)
     z-index: 1
@@ -47,12 +46,3 @@ $logo-width: 256px
       &:hover
         color: rgba(255, 255, 255, 1)
         +animation(swing .5s)
-
-.header_logo_bubbles
-  opacity: .9
-  +animation(slideBubbles 3s infinite)
-
-.header_logo_bubbles.posa
-  bottom: 0
-  left: -30px
-  +animation(slideBubbles 3.5s infinite)
