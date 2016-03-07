@@ -13,9 +13,12 @@ $logo-width: 256px
     +justify-content(space-between)
   &_logo
     display: inline-block
+    position: relative
     height: 300px
     +flex(1 1 $logo-width)
-    +animation(submarine 5s, submarineFadeIn .5s 5s ease, submarine2 1.5s 5.5s ease-in-out infinite)
+    +animation(submarineFadeIn 1s ease, submarine 1.5s 1s ease-in-out infinite)
+    opacity: .9
+      +box-shadow(2px 2px 2px $black)
     &_svg
       width: 256px
       height: 300px
@@ -27,7 +30,7 @@ $logo-width: 256px
     +justify-content(center)
     +align-items(center)
     +trailer(1)
-    +leader(3)
+    +leader(2.5)
     width: 100%
     +animation(bounceInRight 1s)
     z-index: 1
@@ -39,10 +42,13 @@ $logo-width: 256px
       letter-spacing: 1px
       font-weight: bold
       text-shadow: 0 2px 4px rgba(0,0,0,.1)
+      +transition (.5s cubic-bezier(0, 1.05, 0.83, 0.9))
+      opacity: .95
       &:first-child
         margin-left: 0
       &:last-child
         margin-right: 0
       &:hover
         color: rgba(255, 255, 255, 1)
-        +animation(swing .5s)
+        letter-spacing: 4px
+        opacity: .85

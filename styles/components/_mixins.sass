@@ -15,7 +15,7 @@
     opacity: 0
     visibility: hidden
   to
-    opacity: .9
+    opacity: 1
     visibility: visible
 
 +keyframes (gradientColors)
@@ -31,46 +31,17 @@
 $translatex: 20px
 $rotate: 5deg
 
-+keyframes (submarine)
-  0%
-    transform: translateX(-20%) translateY(0)
-    animation-timing-function: linear
-  12.5%
-    transform: translateX(-2.5%) translateY(-$translatex)
-    animation-timing-function: linear
-  25%
-    transform: translateX(15%) translateY($translatex)
-    animation-timing-function: linear
-  37.5%
-    transform: translateX(32.5%) translateY(-$translatex)
-    animation-timing-function: linear
-  50%
-    transform: translateX(50%) translateY($translatex)
-    animation-timing-function: linear
-  62.5%
-    transform: translateX(67.5%) translateY(-$translatex)
-    animation-timing-function: linear
-  75%
-    transform: translateX(85%) translateY($translatex)
-    animation-timing-function: linear
-  87.5%
-    transform: translateX(102.5%) translateY(-$translatex)
-    animation-timing-function: linear
-  100%
-    transform: translateX(120%) translateY(0)
-    animation-timing-function: linear
-
 +keyframes (submarineFadeIn)
   from
     transform: translateY(-300px) translateX(calc(50% - 150px)) scale(.95)
     opacity: 0
     visibility: hidden
   to
-    transform: translateY(-4px) translateX(calc(50% - 150px)) scale(1)
+    transform: translateY(0px) translateX(calc(50% - 150px)) scale(1)
     opacity: .9
     visibility: visible
 
-+keyframes (submarine2)
++keyframes (submarine)
   0%
     transform: translateY(0) translateX(calc(50% - 150px))
   16.65%
@@ -107,20 +78,6 @@ $rotate: 5deg
   to
     transform: translate3d(0, 0, 0)
 
-+keyframes(swing)
-  0%
-    transform: translateY(5px)
-  20%
-    transform: rotate3d(0, 0, 1, 10deg)
-  40%
-    transform: rotate3d(0, 0, 1, -7deg)
-  60%
-    transform: rotate3d(0, 0, 1, 4deg)
-  80%
-    transform: rotate3d(0, 0, 1, -4deg)
-  to
-    transform: rotate3d(0, 0, 1, 0deg)
-
 +keyframes (bounceInRight)
   from, 60%, 75%, 90%, to
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
@@ -137,14 +94,8 @@ $rotate: 5deg
   to
     transform: none
 
-+keyframes (k1)
-  from
-    transform: translateX(0%)
-  to
-    transform: translateX(100%)
-
-+keyframes (k2)
-  from
-    transform: translateY(50px)
-  to
-    transform: translateX(-50px)
++keyframes (hue)
+  0%, 100%
+    -webkit-filter: hue-rotate(0deg)
+  50%
+    -webkit-filter: hue-rotate(-90deg)

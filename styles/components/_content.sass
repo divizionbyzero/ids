@@ -20,7 +20,6 @@
         display: block
         padding-top: 100%
       &__img
-        border: 5px solid $blue
         position:  absolute
         top: 0
         left: 0
@@ -32,8 +31,21 @@
     color: $black
     +leader(.5)
     +trailer(.2)
+    background-image: -webkit-linear-gradient(180deg, #0e6ca6, #56cc9c, #b274d3)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    -webkit-animation: hue 30s infinite linear
   &_text
     text-align: justify
+  &_info
+    &_wrap
+      +trailer(1)
+    &__text
+      text-align: justify
+    &__img
+      float: right
+      width: 20%
+      margin: 0 0 0 3%
 
 .about
   +trailer(1)
@@ -49,8 +61,13 @@
     &_item
       display: block
       +trailer(.4)
-      color: $blue
+      color: $black
       margin-left: 1em
+      &:hover
+        color: $black
+        letter-spacing: 1px
+        opacity: .9
+        +transition(.3s)
       img
         width: 25px
         +opacity(.8)
@@ -71,6 +88,12 @@
     &>td
       padding-left: 2em
 
+@media screen and (max-width: $sm)
+  .content
+    &_info
+      &__img
+        width: 39%
+
 @media screen and (max-width: $xs)
   .content
     &_potfolio
@@ -78,3 +101,7 @@
       &_item
         width: 100%
         +trailer(1)
+    &_info
+      &__img
+        width: 50%
+        margin: 0 0 0 5%

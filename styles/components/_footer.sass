@@ -11,6 +11,7 @@
     display: block
     +leader(1)
     +trailer(1)
+    +animation(fadeIn 1s ease-out)
   &_nav
     +flex(1 1 auto)
     +display-flex(flex)
@@ -25,10 +26,16 @@
       height: 100%
       letter-spacing: 1px
       +adjust-font-size-to(19px)
+      opacity: .95
       &:first-child
         margin-left: 0
       &:last-child
         margin-right: 0
+      &:hover
+        color: rgba(255, 255, 255, 1)
+        letter-spacing: 4px
+        opacity: .85
+
   &_copy
     color: $white
 
