@@ -39,13 +39,14 @@
     text-align: justify
   &_info
     &_wrap
-      +trailer(1)
+      +trailer(.5)
     &__text
       text-align: justify
+      text-indent: 2em
     &__img
       float: right
       width: 20%
-      margin: 0 0 0 3%
+      margin: 1% 0 0 3%
 
 .about
   +trailer(1)
@@ -66,7 +67,7 @@
       &:hover
         color: $black
         letter-spacing: 1px
-        opacity: .9
+        opacity: .85
         +transition(.3s)
       img
         width: 25px
@@ -92,7 +93,7 @@
   .content
     &_info
       &__img
-        width: 39%
+        width: 38%
 
 @media screen and (max-width: $xs)
   .content
