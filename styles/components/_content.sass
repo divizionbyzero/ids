@@ -29,12 +29,13 @@
     @extend .title
     letter-spacing: 1px
     color: $black
-    +leader(.5)
-    +trailer(.2)
+    +leader(.3)
+    +trailer(.3)
     background-image: -webkit-linear-gradient(180deg, #0e6ca6, #56cc9c, #b274d3)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
     -webkit-animation: hue 30s infinite linear
+    font-weight: 400
   &_text
     text-align: justify
   &_info
@@ -54,7 +55,7 @@
 .portfolio,
 .why,
 .contacts
-  +leader(2)
+  +leader(1.5)
   +trailer(1)
 
 
@@ -77,19 +78,15 @@ i
       display: block
       +trailer(.4)
       color: $black
-      margin-left: 1em
       letter-spacing: normal
       &:hover
         color: $black
         letter-spacing: .3px
         opacity: .85
-        +transition(letter-spacing opacity .3s)
-      img
-        width: 25px
-        +opacity(.8)
-        margin-right: 10px
-        +adjust-font-size-to(22px)
-        vertical-align: middle
+        +transition(.3s)
+        i
+          margin-right: 12px
+          +transition(.3s)
 
 .table
   &_head
