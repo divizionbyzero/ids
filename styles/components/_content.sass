@@ -57,6 +57,20 @@
   +leader(2)
   +trailer(1)
 
+
+$icons: sprite-map('icons/*.png')
+i
+  background: $icons
+  display: inline-block
+  vertical-align: text-bottom
+  margin-right: .5em
+
+@each $i in sprite_names($icons)
+  .icn-#{$i}
+    background-position: sprite-position($icons, $i)
+    +sprite-dimensions($icons, $i)
+
+
 .contacts
   &_list
     &_item
@@ -64,11 +78,12 @@
       +trailer(.4)
       color: $black
       margin-left: 1em
+      letter-spacing: normal
       &:hover
         color: $black
-        letter-spacing: 1px
+        letter-spacing: .3px
         opacity: .85
-        +transition(.3s)
+        +transition(letter-spacing opacity .3s)
       img
         width: 25px
         +opacity(.8)
@@ -83,11 +98,22 @@
     &__text
       display: inline-block
       text-transform: uppercase
+      font-family: 'latomedium'
       +leader(.1)
       +trailer(.1)
   &_content
     &>td
       padding-left: 2em
+      vertical-align: top
+      span
+        +trailer(.1)
+        display: inline-block
+
+.bottom-indent
+  &>td
+    span
+      +trailer(.25)
+      display: inline-block
 
 @media screen and (max-width: $sm)
   .content
@@ -106,3 +132,5 @@
       &__img
         width: 50%
         margin: 0 0 0 5%
+  .table_content>td
+    padding-left: 1em

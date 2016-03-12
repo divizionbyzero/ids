@@ -35,6 +35,11 @@ a
 a,
 button
   +transition(.2s)
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus
+    outline: none
 
 .pr0
   padding-right: 0
@@ -42,18 +47,18 @@ button
 .title
   font-size: $base-font-size * 2
   +adjust-font-size-to($base-font-size * 2)
-  font-family: 'Oswald', sans-serif
+  font-family: oswalddemibold, sans-serif
 
 .subtitle
   font-size: $base-font-size * 1.5
   +adjust-font-size-to($base-font-size * 1.5)
   letter-spacing: 1px
-  font-family: 'Oswald', sans-serif
+  font-family: 'oswald_regularregular', sans-serif
 
 .nav-item
   font-size: $base-font-size * 1.5
   +adjust-font-size-to($base-font-size * 1.5)
-  font-family: 'Oswald', sans-serif
+  font-family: 'oswald_regularregular', sans-serif
   text-transform: uppercase
 
 .text
@@ -62,3 +67,4 @@ button
 .small-text
   font-size: $base-font-size * .75
   +adjust-font-size-to($base-font-size * .75)
+

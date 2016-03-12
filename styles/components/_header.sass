@@ -8,9 +8,7 @@ $logo-width: 256px
   width: 100%
   overflow: hidden
   &_wrap
-    +display-flex(flex)
-    +flex-flow(column nowrap)
-    +justify-content(space-between)
+    text-align: center
   &_logo
     display: inline-block
     position: relative
@@ -52,3 +50,11 @@ $logo-width: 256px
         color: rgba(255, 255, 255, 1)
         letter-spacing: 4px
         opacity: .85
+
+@media screen and (max-width: $xs)
+  .header_nav
+    +leader(0)
+    &__item
+      font-size: 1.3em
+  .header_logo_svg
+    width: 200px
