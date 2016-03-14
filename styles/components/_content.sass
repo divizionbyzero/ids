@@ -39,16 +39,8 @@
   &_text
     text-align: justify
   &_info
-    &_wrap
-      +leader(1)
-    &__text
-      text-align: justify
-      text-indent: 2em
     &__img
-      float: right
-      width: 19%
-      margin: 1% 0 0 3%
-
+      margin-top: 10px
 .about
   +trailer(1)
 
@@ -89,6 +81,7 @@ i
           +transition(.3s)
 
 .table
+  width: 100%
   &_head
     background: #dddddd
     padding-left: 1em
@@ -100,8 +93,9 @@ i
       +trailer(.1)
   &_content
     &>td
-      padding-left: 2em
-      vertical-align: top
+      padding: 0 0 0 2em !important
+      vertical-align: top !important
+      border-top: 0 !important
       span
         +trailer(.1)
         display: inline-block
@@ -112,11 +106,6 @@ i
       +trailer(.25)
       display: inline-block
 
-@media screen and (max-width: $sm)
-  .content
-    &_info
-      &__img
-        width: 31%
 
 @media screen and (max-width: $xs)
   .content
@@ -125,9 +114,5 @@ i
       &_item
         width: 100%
         +trailer(1)
-    &_info
-      &__img
-        width: 50%
-        margin: 0 0 0 5%
   .table_content>td
-    padding-left: 1em
+    padding-left: 1em !important

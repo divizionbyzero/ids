@@ -1,6 +1,6 @@
-article.about(role='article', aria-label='Major info about author', id='about')
+article.about(aria-label='Major info about author', id='about')
     h1.content_title About
-    table(width='100%')
+    table.table
         tr
             td(colspan='2', class='table_head')
                 span(class='table_head__text') personal information
@@ -78,6 +78,11 @@ article.about(role='article', aria-label='Major info about author', id='about')
                 span English
             td
                 span Intermediate
-    .content_info_wrap.clearfix
-        img.content_info__img.hidden-xs(src='images/myphoto.jpg')
-        p.content_info__text  My primary task at work is the creation of layouts. In my work I like most of all those opportunities that gives us a huge range of web instruments. I have to learn to apply in practice so many things to become an adult and self-sufficient developer. I would like to gain new knowledge, to get new experiences, to know new people from studying at the IDS.
+        tr
+            td(colspan='2', class='table_head')
+                span(class='table_head__text') additional info
+        tr(class='table_content')
+            td
+                img.content_info__img(src='images/myphoto.jpg', alt='My photo')
+            td
+                p.content_info__text  My primary task at work is the creation of layouts. In my work I like most of all those opportunities that gives us a huge range of web instruments. I have to learn to apply in practice so many things to become an adult and self-sufficient developer. I would like to gain new knowledge, to get new experiences, to know new people from studying at the IDS.

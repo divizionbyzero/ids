@@ -17,18 +17,18 @@
     <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="safari-pinned-tab.svg">
     <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width">
+    <title>Hello world!</title>
   </head>
   <body>
-    <title>Hele</title>
     <header class="header">
-      <div class="container header_wrap"><a role="banner" class="header_logo">
+      <div class="container header_wrap"><a class="header_logo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 325.468 325.468" style="enable-background:new 0 0 325.468 325.468;" xml:space="preserve" width="512px" height="512px" class="header_logo_svg">
             <g>
               <g>
@@ -40,12 +40,12 @@
               </g>
             </g>
           </svg></a></div>
-      <nav role="navigation" class="header_nav col-xs-12"><a role="link" href="#about" class="header_nav__item">About</a><a role="link" href="#portfolio" class="header_nav__item">Portfolio</a><a role="link" href="#contacts" class="header_nav__item">Contacts</a></nav>
+      <nav class="header_nav col-xs-12"><a href="#about" class="header_nav__item">About</a><a href="#portfolio" class="header_nav__item">Portfolio</a><a href="#contacts" class="header_nav__item">Contacts</a></nav>
     </header>
-    <main role="main" class="container content">
-      <article role="article" aria-label="Major info about author" id="about" class="about">
+    <main class="container content">
+      <article aria-label="Major info about author" id="about" class="about">
         <h1 class="content_title">About</h1>
-        <table width="100%">
+        <table class="table">
           <tr>
             <td colspan="2" class="table_head"><span class="table_head__text">personal information</span></td>
           </tr>
@@ -110,26 +110,32 @@
             <td><span>English</span></td>
             <td><span>Intermediate</span></td>
           </tr>
+          <tr>
+            <td colspan="2" class="table_head"><span class="table_head__text">additional info</span></td>
+          </tr>
+          <tr class="table_content">
+            <td><img src="images/myphoto.jpg" alt="My photo" class="content_info__img"></td>
+            <td>
+              <p class="content_info__text"> My primary task at work is the creation of layouts. In my work I like most of all those opportunities that gives us a huge range of web instruments. I have to learn to apply in practice so many things to become an adult and self-sufficient developer. I would like to gain new knowledge, to get new experiences, to know new people from studying at the IDS.</p>
+            </td>
+          </tr>
         </table>
-        <div class="content_info_wrap clearfix"><img src="images/myphoto.jpg" class="content_info__img hidden-xs">
-          <p class="content_info__text"> My primary task at work is the creation of layouts. In my work I like most of all those opportunities that gives us a huge range of web instruments. I have to learn to apply in practice so many things to become an adult and self-sufficient developer. I would like to gain new knowledge, to get new experiences, to know new people from studying at the IDS.</p>
-        </div>
       </article>
-      <article role="article" aria-label="Work examples" id="portfolio" class="portfolio">
+      <article aria-label="Work examples" id="portfolio" class="portfolio">
         <h2 class="content_title">Portfolio</h2>
         <div class="content_potfolio"><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap cui"><img src="images/belarusn.png" class="content_potfolio_item__img"></div></a><a class="content_potfolio_item hover-scale">
-            <div href="http://fgolf.by/" class="content_potfolio_item_wrap"><img src="images/fgolf.png" class="content_potfolio_item__img"></div></a><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap cui"><img src="images/spurry.png" class="content_potfolio_item__img"></div></a></div>
+            <div class="content_potfolio_item_wrap cui"><img src="images/belarusn.png" alt="portfolio site 1" class="content_potfolio_item__img"></div></a><a href="http://fgolf.by/" class="content_potfolio_item hover-scale">
+            <div class="content_potfolio_item_wrap"><img src="images/fgolf.png" alt="portfolio site 2" class="content_potfolio_item__img"></div></a><a class="content_potfolio_item">
+            <div class="content_potfolio_item_wrap cui"><img src="images/spurry.png" alt="portfolio site 3" class="content_potfolio_item__img"></div></a></div>
       </article>
-      <article role="article" aria-label="Author's contacts" id="contacts" class="contacts">
+      <article aria-label="Author's contacts" id="contacts" class="contacts">
         <h2 class="content_title">Contacts</h2>
         <address class="contacts_list"><a href="mailto:kernazhytskayalena@gmail.com" class="contacts_list_item"><i class="icn-envelope"></i> kernazhytskayalena@gmail.com</a><a class="contacts_list_item"><i class="icn-old-typical-phone"></i> +375 (25) 690-47-79</a><a href="https://www.linkedin.com/in/alena-kernazhytskaya-2b7245116" class="contacts_list_item"><i class="icn-linkedin-sign"></i> my profile</a><a href="https://github.com/divizionbyzero" class="contacts_list_item"><i class="icn-github-character"></i> my account</a></address>
       </article>
     </main>
     <footer class="footer">
       <div class="container footer_wrap">
-        <nav role="navigation" class="col-xs-12 col-sm-7 footer_nav"><a role="link" href="#about" class="footer_nav__item">About</a><a role="link" href="#portfolio" class="footer_nav__item">Portfolio</a><a role="link" href="#contacts" class="footer_nav__item">Contacts</a></nav>
+        <nav class="col-xs-12 col-sm-7 footer_nav"><a href="#about" class="footer_nav__item">About</a><a href="#portfolio" class="footer_nav__item">Portfolio</a><a href="#contacts" class="footer_nav__item">Contacts</a></nav>
         <div role="contentinfo" class="col-xs-12 col-sm-5 footer_copy text-right"><span class="footer_copy__text">&copy; 2015 Hele. All rights reserved.</span></div>
       </div>
     </footer>
