@@ -11,20 +11,37 @@
       +flex-flow(column nowrap)
       width: 30%
       overflow: hidden
+      cursor: auto
+      color: $black
+      &:hover
+        color: $black
+        .content_potfolio_item__desc
+          color: $black
+      &[href^="http"]:hover
+        cursor: pointer
+        .content_potfolio_item__desc
+          color: $black
+          opacity: .8
+          cursor: pointer
+          +transition(.2s)
       &_wrap
         position: relative
         width: 100%
         overflow: hidden
         &:before
           content: ""
-        display: block
-        padding-top: 100%
+          display: block
+          padding-top: 100%
       &__img
         position:  absolute
         top: 0
         left: 0
         bottom: 0
         right: 0
+      &__desc
+        +leader(.5)
+        color: $black
+        cursor: text
   &_title
     @extend .title
     letter-spacing: 1px
@@ -41,6 +58,7 @@
   &_info
     &__img
       margin-top: 10px
+      max-width: 150px
 .about
   +trailer(1)
 
@@ -91,6 +109,8 @@ i
       font-family: 'latomedium'
       +leader(.1)
       +trailer(.1)
+    &+.table_content span
+      +leader(.1)
   &_content
     &>td
       padding: 0 0 0 2em !important

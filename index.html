@@ -46,8 +46,8 @@
       <article aria-label="Major info about author" id="about" class="about">
         <h1 class="content_title">About</h1>
         <table class="table">
-          <tr>
-            <td colspan="2" class="table_head"><span class="table_head__text">personal information</span></td>
+          <tr class="table_head">
+            <td colspan="2"><span class="table_head__text">personal information</span></td>
           </tr>
           <tr class="table_content">
             <td><span>name</span></td>
@@ -57,8 +57,8 @@
             <td><span>age</span></td>
             <td><span>24</span></td>
           </tr>
-          <tr>
-            <td colspan="2" class="table_head"><span class="table_head__text">education</span></td>
+          <tr class="table_head">
+            <td colspan="2"><span class="table_head__text">education</span></td>
           </tr>
           <tr class="table_content">
             <td><span>university</span></td>
@@ -76,8 +76,8 @@
             <td><span>time period</span></td>
             <td><span>2008 - present</span></td>
           </tr>
-          <tr>
-            <td colspan="2" class="table_head"><span class="table_head__text">work experience</span></td>
+          <tr class="table_head">
+            <td colspan="2"><span class="table_head__text">work experience</span></td>
           </tr>
           <tr class="table_content">
             <td><span>company name</span></td>
@@ -91,8 +91,8 @@
             <td><span>time period</span></td>
             <td><span>July 2015 - present</span></td>
           </tr>
-          <tr>
-            <td colspan="2" class="table_head"><span class="table_head__text">skills</span></td>
+          <tr class="table_head">
+            <td colspan="2"><span class="table_head__text">skills</span></td>
           </tr>
           <tr class="table_content">
             <td><span>HTML</span></td>
@@ -106,27 +106,31 @@
             <td><span>JavaScript</span></td>
             <td><span>jQuery, AngularJS</span></td>
           </tr>
-          <tr class="table_content">
+          <tr class="table_content bottom-indent">
             <td><span>English</span></td>
             <td><span>Intermediate</span></td>
           </tr>
-          <tr>
-            <td colspan="2" class="table_head"><span class="table_head__text">additional info</span></td>
+          <tr class="table_head">
+            <td colspan="2"><span class="table_head__text">additional info</span></td>
           </tr>
           <tr class="table_content">
             <td><img src="images/myphoto.jpg" alt="My photo" class="content_info__img"></td>
-            <td>
-              <p class="content_info__text"> My primary task at work is the creation of layouts. In my work I like most of all those opportunities that gives us a huge range of web instruments. I have to learn to apply in practice so many things to become an adult and self-sufficient developer. I would like to gain new knowledge, to get new experiences, to know new people from studying at the IDS.</p>
-            </td>
+            <td><span class="content_info__text"> My primary task at work is the creation of layouts. In my work I like most of all those opportunities that gives us a huge range of web instruments. I have to learn to apply in practice so many things to become an adult and self-sufficient developer. I would like to gain new knowledge, to get new experiences, to know new people from studying at the IDS.</span></td>
           </tr>
         </table>
       </article>
       <article aria-label="Work examples" id="portfolio" class="portfolio">
         <h2 class="content_title">Portfolio</h2>
         <div class="content_potfolio"><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap cui"><img src="images/belarusn.png" alt="portfolio site 1" class="content_potfolio_item__img"></div></a><a href="http://fgolf.by/" class="content_potfolio_item hover-scale">
-            <div class="content_potfolio_item_wrap"><img src="images/fgolf.png" alt="portfolio site 2" class="content_potfolio_item__img"></div></a><a class="content_potfolio_item">
-            <div class="content_potfolio_item_wrap cui"><img src="images/spurry.png" alt="portfolio site 3" class="content_potfolio_item__img"></div></a></div>
+            <figure class="content_potfolio_item_wrap cui"><img src="images/belarusn.png" alt="portfolio site 1" class="content_potfolio_item__img">
+              <figcaption class="content_potfolio_item__desc">Still in development</figcaption>
+            </figure></a><a href="http://fgolf.by/" class="content_potfolio_item">
+            <figure class="content_potfolio_item_wrap"><img src="images/fgolf.png" alt="portfolio site 2" class="content_potfolio_item__img">
+              <figcaption class="content_potfolio_item__desc">http://fgolf.by/</figcaption>
+            </figure></a><a class="content_potfolio_item">
+            <figure class="content_potfolio_item_wrap cui"><img src="images/spurry.png" alt="portfolio site 3" class="content_potfolio_item__img">
+              <figcaption class="content_potfolio_item__desc">Still in development</figcaption>
+            </figure></a></div>
       </article>
       <article aria-label="Author's contacts" id="contacts" class="contacts">
         <h2 class="content_title">Contacts</h2>
@@ -135,8 +139,8 @@
     </main>
     <footer class="footer">
       <div class="container footer_wrap">
-        <nav class="col-xs-12 col-sm-7 footer_nav"><a href="#about" class="footer_nav__item">About</a><a href="#portfolio" class="footer_nav__item">Portfolio</a><a href="#contacts" class="footer_nav__item">Contacts</a></nav>
-        <div role="contentinfo" class="col-xs-12 col-sm-5 footer_copy text-right"><span class="footer_copy__text">&copy; 2015 Hele. All rights reserved.</span></div>
+        <nav class="col-xs-12 col-sm-7 footer_nav nopadding"><a href="#about" class="footer_nav__item">About</a><a href="#portfolio" class="footer_nav__item">Portfolio</a><a href="#contacts" class="footer_nav__item">Contacts</a></nav>
+        <div role="contentinfo" class="col-xs-12 col-sm-5 footer_copy text-right nopadding"><span class="footer_copy__text">&copy; 2015 Hele. All rights reserved.</span></div>
       </div>
     </footer>
   </body>
